@@ -12,12 +12,12 @@
         tools:context="com.elysewarren.inclassassignment07_elysew.MainActivity">
 
         <EditText
-            android:id="@+id/title"
+            android:id="@+id/title_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:hint="Title"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <Button
             android:layout_width="wrap_content"
@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:hint="Dog Breed"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/dog_age"
@@ -42,12 +42,12 @@
             android:layout_margin="8dp"
             android:hint="Age"
             android:inputType="number"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <CheckBox
             android:id="@+id/allergy_type"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Is it hypoallergenic?" />
 
         <Button
