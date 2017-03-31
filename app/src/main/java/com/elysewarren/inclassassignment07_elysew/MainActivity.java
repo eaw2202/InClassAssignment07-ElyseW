@@ -12,7 +12,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class MainActivity extends AppCompatActivity {
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference titleRef = database.getReference("title");
-    private DatabaseReference dogsRef = database.getReference("dogs");
+    private DatabaseReference dogRef = database.getReference("dog");
 
     private EditText displayTitle;
     private EditText displayBreed;
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         boolean isAllergic = checkBox.isChecked();
 
         Dog yorkie = new Dog(dogType, dogAge, isAllergic);
-        dogsRef.push().setValue(yorkie);
+        dogRef.push().setValue(yorkie);
     }
 
 }
